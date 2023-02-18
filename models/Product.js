@@ -23,7 +23,7 @@ Product.init(
         stock: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            defaultVault: 10,
+            defaultValue: 10,
             isNumeric: true
         },
         price: {
@@ -44,7 +44,7 @@ Product.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Product',
+        modelName: 'product',
     }
 );
 

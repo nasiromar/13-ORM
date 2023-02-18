@@ -14,10 +14,10 @@ ProductTag.init(
             autoIncrement: true
         },
         product_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             references: {
                 model: 'product',
-                key: 'id',    
+                key: 'id'
             }
          },
          tag_id: {
@@ -33,8 +33,8 @@ ProductTag.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Product_tag',
+        modelName: 'product_tag',
     }
 );
 
-module.exports = ProductTag
+module.exports = ProductTag;
